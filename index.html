@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<script src="js/Game.js"></script>
+<script src="js/Bird.js"></script>
+<script src="js/Land.js"></script>
+<script src="js/Sky.js"></script>
+<script src="js/Pipe.js"></script>
+
+<body>
+<canvas width="800" height="500"></canvas>
+<script>
+  var cs=document.querySelector('canvas');
+  var ctx=cs.getContext('2d');//获取绘图的 API
+  
+  var game=new Game({ctx:ctx,cs:cs});
+  game.start();
+  console.log(game);
+</script>
+</body>
+</html>
